@@ -1,0 +1,5 @@
+v 1.0.1
+d 'DATAHAND': some utility packages to handle the HFCS data
+d version (release) as well as their dependencies from
+d {browse "https://gitlab.com/dubidub/HFCSdatahand.git":GitLab} website
+p datahand
