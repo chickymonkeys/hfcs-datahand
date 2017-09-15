@@ -1,0 +1,8 @@
+d 'DATAHAND': some utility packages to handle the HFCS data
+d version (release) as well as their dependencies from
+d {browse "https://gitlab.com/dubidub/HFCSdatahand.git":GitLab} website
+d
+d Distribution-Date: 20170913
+d
+F encodestrings.ado
+F wordwrap.ado

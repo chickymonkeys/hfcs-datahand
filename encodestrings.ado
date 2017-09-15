@@ -8,8 +8,8 @@
 * in this way, we can refer at countries as "country_code":country to deal     *
 * with countries' exceptions in the code                                       *
 ********************************************************************************
-
-*! setenv v1.0.1 APizzigolotto 11sep2017
+* cap prog drop encodestrings
+*! encodestrings v1.0.1 APizzigolotto 11sep2017
 program encodestrings
 
     * define syntax command of encodestrings
