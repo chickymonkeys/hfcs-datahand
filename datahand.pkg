@@ -5,4 +5,8 @@ d
 d Distribution-Date: 20170913
 d
 F encodestrings.ado
-F wordwrap.ado
+F cleaninc.ado
+F agebrackets.ado
+F educbrackets.ado
+F license
+F README.md
