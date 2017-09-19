@@ -38,6 +38,8 @@ program define agebrackets
     replace ageRange = 6 if `varlist' > 74
   }
 
+  * TODO: there is a problem with the labels, they are mismatched
+
   * if we pass a pre-compiled age brackets variable (canberra or not)
   else if "`varlist'" == "dhagehb" | "`varlist'" == "dhageh1b" | "`varlist'" == "dhageh2b" | "`varlist'" == "dhageh3b"  {
     replace ageRange = 1 if `varlist' == 16 | `varlist' == 20 | `varlist' == 25 | `varlist' == 30
@@ -53,7 +55,8 @@ program define agebrackets
   }
 
   capture label drop ageRange_`varlist'
-  label define ageRange_`varlist' 1 "16-24" 2 "25-34" 3 "35-44" 4 "45-54" 5 "55-64" 6 "65-74" 7 "75+"
+  * label define ageRange_`varlist' 1 "16-24" 2 "25-34" 3 "35-44" 4 "45-54" 5 "55-64" 6 "65-74" 7 "75+"
+  label define ageRange_`varlist' 1 "16-34" 2 "35-44" 3 "45-54" 4 "55-64" 5 "65-74" 6 "75+"
   label values ageRange ageRange_`varlist'
 
 end
