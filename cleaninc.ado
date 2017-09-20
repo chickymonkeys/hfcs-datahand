@@ -33,6 +33,9 @@ program define cleaninc
             else {
                 * replace with missing or zero if missing or negative
                 replace `i' = value if `i' < 0 | missing(`i')
+                if "`i'" == "di2000" {
+                       replace `i' = `value' if `i' == 0
+                }
             }
 
         }
