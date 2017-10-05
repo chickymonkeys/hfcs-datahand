@@ -33,8 +33,9 @@ program define cleaninc
             else {
                 * replace with missing or zero if missing or negative
                 replace `i' = value if `i' < 0 | missing(`i')
+                * total household gross income 2 has no boolean control, as well as net wealth
                 if "`i'" == "di2000" {
-                       replace `i' = `value' if `i' == 0
+                       replace `i' = value if `i' == 0
                 }
             }
 
