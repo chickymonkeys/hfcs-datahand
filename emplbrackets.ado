@@ -38,7 +38,7 @@ program define emplbrackets
 
         * labeling the categories
         capture label drop emplStatus_`varlist'
-        label define emplStatus_`varlist' 1 "Employee" 2 "Unemployed" 3 "Retired" 4 "Other not working"
+        label define emplStatus_`varlist' 1 "Employee" 2 "Self-Employed" 3 "Retired" 4 "Other not working"
 
         label values emplStatus emplStatus_`varlist'
     }
